@@ -68,8 +68,10 @@ public class DefaultAnalysisMode extends AbstractAnalysisMode {
   public void printMode() {
     if (preview) {
       LOG.info("Preview mode");
+      LOG.warn("Preview mode is deprecated");
     } else if (issues) {
       LOG.info("Issues mode");
+      LOG.warn("Issues mode is deprecated");
     } else {
       LOG.info("Publish mode");
     }
